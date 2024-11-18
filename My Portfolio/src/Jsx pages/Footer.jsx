@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (

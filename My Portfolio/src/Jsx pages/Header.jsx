@@ -1,4 +1,3 @@
-import { Link, useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
 
 function Header() {
