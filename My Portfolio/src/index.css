@@ -66,3 +66,187 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  background-color: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* About Me */
+.about-me .content {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.profile-image {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  padding: 1rem;
+}
+
+.project-links {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  padding: 0.5rem 1rem;
+  background: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Contact Form */
+.contact form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.contact form div {
+  margin-bottom: 1.5rem;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact .error {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Resume */
+.resume-content {
+  margin-top: 2rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.skills-section {
+  margin-bottom: 2rem;
+}
+
+.skills-section ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .about-me .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin: 0 auto;
+  }
+}
