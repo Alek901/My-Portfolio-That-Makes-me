@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Header from './Jsx pages/Header';
+import Footer from './Jsx pages/Footer';
+import AboutMe from './Jsx pages/AboutMe';
+import Portfolio from './Jsx pages/Portfolio';
+import Contact from './Jsx pages/Contact';
+import Resume from './Jsx pages/Resume';
 
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="app" style={{ backgroundColor: '#7393B3', minHeight: '100vh' }}>
         <Header />
         <main>
           <Routes>
@@ -25,5 +25,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
