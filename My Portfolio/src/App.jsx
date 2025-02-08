@@ -5,11 +5,12 @@ import AboutMe from './Jsx pages/AboutMe';
 import Portfolio from './Jsx pages/Portfolio';
 import Contact from './Jsx pages/Contact';
 import Resume from './Jsx pages/Resume';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="app" style={{ backgroundColor: '#7393B3', minHeight: '100vh' }}>
+      <div className="app" style=  {null}>
         <Header />
         <main>
           <Routes>

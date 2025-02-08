@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 12rem;
   text-align: center;
+  background-color: rgba(0, 89, 255, 0.514);
+  width: 100%;
 }
 
 .logo {
@@ -39,4 +42,28 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app nav {
+  position: absolute;
+  top: 100px;
+  right: 8%;
+}
+
+.app nav a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.app nav a:hover {
+  color: #007bff;
+}
+
+.Alek {
+  position: absolute;
+  top: 100px;
+  left: 8%;
 }
